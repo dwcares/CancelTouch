@@ -1,0 +1,61 @@
+﻿body {
+    margin:0;  
+     
+}
+
+.header {
+    width: calc(100% - 20px);
+    height: 50px;
+    background-color: navy;
+    
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+    .header div {
+        font-family: 'Segoe UI Light', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+        font-size: 20pt;
+        color: white;     
+        padding: 5px 10px 0px 10px;
+        min-width: 60px;
+        text-align: center;
+    }
+
+    .header div:hover {
+        background-color: lightblue;
+        color: navy;
+    }
+
+
+.menu {
+    position: fixed;
+    left: 20px;
+   
+    background-color: #444444;
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    
+    opacity: 0;
+    transition: opacity ease 250ms;
+}
+
+.menu.shown {
+    opacity: 1;
+}
+
+    .menu div {
+        min-width: 80px;
+        color: lightgrey;     
+        font-family: 'Segoe UI', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+        font-size: 14pt;
+        padding: 2px 2px 2px 10px;
+    }
+
+        .menu div:hover {
+            background-color: lightgrey;
+            color: #444444;
+        }
